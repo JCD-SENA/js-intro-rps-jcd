@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/index.css">
-  <link rel="stylesheet" href="styles/game.css">
-  <title>Piedra - Papel - Tijera</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/game.css">
+	<title>Piedra - Papel - Tijera</title>
 </head>
 <body>
-  <h1 class="title">Piedra - Papel - Tijera</h1>
-  <div class="container">
-    <div class="shift">
-      <div class="container-user">
-        <h2 id="shift-user">Usuario elije:</h2>
-        <div class="buttons">
-          <button id="rock">Piedra</button>
-          <button id="paper">Papel</button>
-          <button id="scissors">Tijera</button>
-        </div>
-      </div>
-      <div class="container-cpu">
-        <h2>Computadora elije:</h2>
-        <p>Aquí juega la cpu</p>
-      </div>
-    </div>
-    <div class="container-result">
-      <p>user</p>
-      <p>cpu</p>
-    </div>    
-  </div>
-  <script src="app.js"></script>
+	<h1 class="title">Piedra - Papel - Tijera</h1>
+	<div class="container">
+		<div class="shift">
+			<div class="container-user">
+				<h2>Usuario elije:</h2>
+				<p id="shift-user">&#8203;</p>
+				<div class="buttons">
+					<button id="rock">Piedra</button>
+					<button id="paper">Papel</button>
+					<button id="scissors">Tijera</button>
+				</div>
+			</div>
+			<div class="container-cpu">
+				<h2>Computadora elije:</h2>
+				<p id="shift-cpu">Aquí juega la cpu</p>
+			</div>
+		</div>
+		<div class="container-result">
+			<h3 id="result-choose">&#8203;</h3>
+			<div class="stats">
+				<p id="result-user">Usuario: 0</p>
+				<p id="result-cpu">CPU: 0</p>
+			</div>
+		</div>    
+	</div>
+	<script src="app.js"></script>
 </body>
 </html>

@@ -24,7 +24,7 @@
   text-align: center;
 }
 
-.container-result > p {
+.stats > p {
   display: inline;
 }
 
@@ -39,4 +39,10 @@ button {
   border: none;
   padding: 5px;
   font-size: 24px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
