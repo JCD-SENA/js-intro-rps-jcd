@@ -46,3 +46,12 @@ button {
   justify-content: space-around;
   align-items: center;
 }
+
+button.opt > img, #cpu-image {
+  width: 50px;
+}
+
+
+#cpu-image {
+  height: 50px;
+}

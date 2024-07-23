@@ -18,7 +18,7 @@ h1.title {
   color: var(--marron);
 }
 
-a, button {
+a, button, #cpu-image {
   margin-top: 10%;
   color: antiquewhite;
   background-color: var(--marron);

@@ -12,6 +12,8 @@ const resCpu = document.getElementById("result-cpu")
 const resultChoose = document.getElementById("result-choose")
 const shiftUserDisplay = document.getElementById("shift-user")
 
+const cpuImage = document.getElementById("cpu-image")
+
 let shiftUser = 0
 let shiftMachine = 0
 
@@ -52,11 +54,14 @@ function chooseCpu () {
 	let machine = getRandomNumber(1,3)
 	if (machine === rock) {
 		shiftMachine = rock
+		cpuImage.src = "assets/images/rock.png"
 		return "La máquina eligió piedra"
 	} else if (machine === paper) {
+		cpuImage.src = "assets/images/paper.png"
 		shiftMachine = paper
 		return "La máquina eligió papel"
 	} else {
+		cpuImage.src = "assets/images/scissors.png"
 		shiftMachine = scissors
 		return "La máquina eligió tijeras"
 	}
@@ -87,11 +92,13 @@ function showWinner() {
 }
 
 function reload()  {
+	cpuImage.src = "assets/images/none.png"
 	let shiftUser = 0
 	let shiftMachine = 0
 	let countUser = 0
 	let countMachine = 0
 	resCpu.textContent = "CPU: "+countMachine
 	resUser.textContent = "Usuario: "+countUser
-	resultChoose.innerHTML = "&#8203;"
+	resultChoose.innerHTML
+	 = "&#8203;"
 }
