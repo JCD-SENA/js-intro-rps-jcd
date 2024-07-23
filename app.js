@@ -93,10 +93,10 @@ function showWinner() {
 
 function reload()  {
 	cpuImage.src = "assets/images/none.png"
-	let shiftUser = 0
-	let shiftMachine = 0
-	let countUser = 0
-	let countMachine = 0
+	shiftUser = 0
+	shiftMachine = 0
+	countUser = 0
+	countMachine = 0
 	resCpu.textContent = "CPU: "+countMachine
 	resUser.textContent = "Usuario: "+countUser
 	resultChoose.innerHTML
